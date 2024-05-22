@@ -92,12 +92,13 @@ nav .nav-right .nav-btn button {
 .navbar .nav-left .nav-links2 {
   width: 100%;
   background-color: lightgray;
-  height: 80vh;
+  height: 100vh;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   transform: translateY(-150%);
   transition: 0.6s;
+  z-index: 999;
 }
 .navbar .nav-left .nav-links2 .nav-2 {
   padding-top: 50px;
@@ -117,6 +118,20 @@ nav .nav-right .nav-btn button {
 }
 .navbar .nav-left .nav-links2 .nav-2 li a:hover {
   box-shadow: 1px 1px 10px #202E3D;
+}
+.navbar .nav-left .nav-links2 button {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  border: none;
+  background: transparent;
+}
+.navbar .nav-left .nav-links2 button i {
+  font-size: 22px;
+  color: white;
+  padding: 10px;
+  background-color: #202E3D;
+  border-radius: 15px;
 }
 
 @media (max-width: 1700px) {
